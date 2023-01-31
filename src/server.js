@@ -1,19 +1,19 @@
 
 import express from 'express';
 import passport from 'passport';
-import {redirect} from './src/controllers/loginController.js'
-import {apiRouter} from './src/routes/apiRouter.js'
+import {redirect} from './controllers/loginController.js'
+import {apiRouter} from './routes/apiRouter.js'
 import session from 'express-session';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import { Server as HttpServer } from 'http'
-import logger from './src/config/loggers.js'
+import logger from './config/loggers.js'
 import handlebars  from 'express-handlebars'
-import {registerStrategy, loginStrategy} from './src/middleware/auth.js'
+import {registerStrategy, loginStrategy} from './middleware/auth.js'
 import cluster from 'cluster';
 import os from 'os';
-import config from './src/config/config.js';
-import {socketOn} from "./src/controllers/socketController.js"
+import config from './config/config.js';
+import {socketOn} from "./controllers/socketController.js"
 
 import cors from 'cors'
 
