@@ -57,8 +57,8 @@ Las siguientes direcciones estan configuradas con el proposito de devolver los d
 Las direcciones (endpoints):
 
 >Para administrar los productos:
->Es necesario setear desde la DB en el user la propiedad "rol", 
->ya que por defecto se crean las cuentas como generic y se deben setear a admin.
+>Es necesario setear desde la DB en el user la propiedad "admin", 
+>ya que por defecto se crean las cuentas como 'user' y se deben setear a admin.
 
 Nuestros productos deben contener los siguientes parametros para ser admintidos en nuetra DB.
 
